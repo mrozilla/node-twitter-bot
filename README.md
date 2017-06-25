@@ -29,7 +29,7 @@ This bot generates sentences from lists of sentence chunks (defined in content.j
 
 3. [Create your Heroku app](https://devcenter.heroku.com/articles/creating-apps), [set up the app deployment](https://devcenter.heroku.com/categories/deployment), and deploy.
 4. [Open your Heroku app](https://dashboard.heroku.com/apps/), click on `Settings` and `Reveal Config Vars`.
-5. Add the following and fill in the corresponding values from step 2.: one
+5. Add the following keys one-by-one and fill in the corresponding values from step 2.:
     
     ```
     CONSUMER_KEY
