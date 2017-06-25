@@ -28,10 +28,20 @@ This bot generates sentences from lists of sentence chunks (defined in content.j
     ```
 
 3. [Create your Heroku app](https://devcenter.heroku.com/articles/creating-apps), [set up the app deployment](https://devcenter.heroku.com/categories/deployment), and deploy.
-4. [Open your Heroku app](https://dashboard.heroku.com/apps/) and click on `Configure Add-ons`.
-5. Search for `Heroku Scheduler` and install it, go back to your app and open the `Heroku Scheduler`.
-6. In the `$` field of the scheduler, write `node bot.js` and set up an hourly frequency.
-7. Make sure the web dyno is turned off (the app gets awoken by the scheduler).
-7. The bot is now tweeting every hour!
+4. [Open your Heroku app](https://dashboard.heroku.com/apps/), click on `Settings` and `Reveal Config Vars`.
+5. Add the following and fill in the corresponding values from step 2.: one
+    
+    ```
+    CONSUMER_KEY
+    CONSUMER_SECRET
+    ACCESS_TOKEN
+    ACCESS_TOKEN_SECRET
+    ```
+
+6. [Open your Heroku app](https://dashboard.heroku.com/apps/) and click on `Configure Add-ons`.
+7. Search for `Heroku Scheduler` and install it, go back to your app and open the `Heroku Scheduler`.
+8. In the `$` field of the scheduler, write `node bot.js` and set up an hourly frequency.
+9. Make sure the web dyno is turned off (the app gets awoken by the scheduler).
+10. The bot is now tweeting every hour!
 
 
